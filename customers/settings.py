@@ -26,6 +26,11 @@ SECRET_KEY = 'django-insecure-kecck5goijjw2z9wbq#)dbd9@a=pnp(qx$z9p7xu&o3u^jpz+j
 DEBUG = True
 
 ALLOWED_HOSTS = []
+from datetime import timedelta
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME':timedelta(minutes=15),
+    'ROTATE_REFRESH_TOKENS':True,
+}
 
 
 # Application definition
